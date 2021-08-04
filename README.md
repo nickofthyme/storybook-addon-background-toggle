@@ -18,15 +18,13 @@ As of storybook `6.3.0` global parameters are synced with the url as query searc
 
 ### yarn
 ```sh
-yarn add -D https://github.com/nickofthyme/storybook-addon-background-toggle.git
+yarn add -D storybook-addon-background-toggle
 ```
 
 ### npm
 ```sh
-npm i -D https://github.com/nickofthyme/storybook-addon-background-toggle.git
+npm i -D storybook-addon-background-toggle
 ```
-
-> Use `https://github.com/nickofthyme/storybook-addon-background-toggle.git` until the package is officially published on npm.
 
 ## Getting started
 
