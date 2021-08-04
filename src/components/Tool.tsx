@@ -16,7 +16,7 @@ const iconBtnId = "sotrybook-addon-background-toggle-icon-btn";
 export const Tool: FC<Props> = ({ api }) => {
   const [expanded, setExpanded] = useState(false);
   const [globals, updateGlobals] = useGlobals();
-  const selectedId: string = globals.background ? String(globals.background) : undefined;
+  const selectedId = globals.background ? String(globals.background) : undefined;
   const backgroundParams = useParameter<Parameters | null>('background', null);
 
   const backgroundParamsRef = useRef(backgroundParams);

@@ -1,6 +1,6 @@
 # Storybook Addon Background Toggle
 
-This addon is inspired by [`@storybook/addon-backgrounds`](https://github.com/storybooks/storybook/tree/next/addons/backgrounds) and [`storybook-addon-backgrounds`](https://github.com/tonai/storybook-addon-backgrounds) and builds a smoother and more feature rich implementation.
+This addon is inspired by [`@storybook/addon-backgrounds`](https://github.com/storybooks/storybook/tree/next/addons/backgrounds) and [`storybook-addon-backgrounds`](https://github.com/tonai/storybook-addon-backgrounds) and builds a smoother and more feature rich implementation. Also see [`storybook-addon-theme-toggle`](https://github.com/nickofthyme/storybook-addon-theme-toggle).
 
 This addon can be used to add a custom [`background`](https://developer.mozilla.org/en-US/docs/Web/CSS/background) to one or many target HTML elements. All options are explained below, see [Parameters](#parameters) section below.
 
@@ -223,13 +223,12 @@ Below is a simple example of how you could access the background via the `contex
 
 import React from "react";
 
-import { DecoratorFunction } from "@storybook/addons";
-import type { BackgroundParameter } from 'storybook-addon-background-toggle';
+import type { DecoratorFunction } from "@storybook/addons";
+import type { BackgroundGlobals } from 'storybook-addon-background-toggle';
 
 const Decorator: DecoratorFunction<JSX.Element> = (Story, context) => {
-  const globals = context.globals as BackgroundParameter;
-
-  const selectedBackground: string | undefined = globals.background; // background id
+  const globals = context.globals as BackgroundGlobals;
+  const selectedBackground = globals.background; // background id
 
   return (
     <div>

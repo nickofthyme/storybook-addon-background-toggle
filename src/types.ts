@@ -82,9 +82,10 @@ export interface Parameters {
   /**
    * A callback that will be executed when the background changes
    */
-  onChange?: (background: Background) => void;
+  onChange?: (background?: Background) => void;
   /**
    * Target element selector(s) to apply class(es)
+   * Can pass and empty string to disable dom changes (i.e. `''`)
    *
    * @default 'body'
    */
@@ -106,4 +107,11 @@ export interface BackgroundParameter {
  */
  export interface StoryBackgroundParameter {
   background?: Pick<Parameters, 'default' | 'blurOnSelect' | 'disable' | 'ignoreQueryParams' | 'clearable'>;
+ }
+
+export interface BackgroundGlobals {
+  /**
+   * Selected background id
+   */
+  background?: string;
 }

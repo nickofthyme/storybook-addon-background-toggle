@@ -2,8 +2,10 @@ import { DecoratorFunction } from "@storybook/addons";
 import { styled } from "@storybook/theming";
 import React from "react";
 
+import { BackgroundGlobals } from '../src/types';
+
 export const Decorator: DecoratorFunction<JSX.Element> = (Story, context) => {
-  const { globals } = context;
+  const globals = context.globals as BackgroundGlobals;
 
   return (
     <Container>
