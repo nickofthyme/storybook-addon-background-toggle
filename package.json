@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-background-toggle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Storybook addon to toggle between multiple backgrounds",
   "keywords": [
     "storybook-addons",
