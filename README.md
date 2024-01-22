@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/19007109/128195841-a8ef6de0-d804-486e-
 
 ## Compatibility
 
-This version is compatible with storybook version `>6.x`.
+This version is compatible with storybook version `>6.x` only. Does not work for `>7.x`, see https://github.com/nickofthyme/storybook-addon-background-toggle/issues/1.
 
 As of storybook `6.3.0` global parameters are synced with the url as query search params ([storybookjs/storybook#15056](https://github.com/storybookjs/storybook/pull/15056)). As such this will lock-in the default global and be persisted between stories. If you want to avoid this behavior you can use `storybook@~6.2.0`.
 
